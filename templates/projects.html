@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Projects {% endblock %}
+
+{% block content %}
+
+<div class="containter">
+
+      <div class="row">
+
+
+          <div class="card card col-md-6 col-xl-4 ">
+              <a href="{% url 'project' 'k_means' %}" class="links">
+              <img src="../static/images/k_means.png" class="card-img-top" style="height:30%, width:20%">
+              <div class="card-body">
+                <h5 class="card-title">Hierarchical K Means Visualization</h5>
+                <p class="card-text">K Means algorithm is used on clusters recursively to create more sub-clusters. This projects uses 2d data for Visualization, however this technique can be used for 3d, 4d, etc. </p>
+                <p class="card-text"><small class="text-muted">Machine Learning</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card col-md-6 col-xl-4">
+            <a href="{% url 'project' 'nlp_russian' %}" class="links">
+              <img src="../static/images/nlp_russian.png" class="card-img-top" style="padding-bottom: 125px; padding-top:170px;"  >
+              <div class="card-body  ">
+                <h5 class="card-title">NLP Russian Language</h5>
+                <p class="card-text ">Using library pymorphy2 which is designed for Russian and Ukraine Languages to get features of the words. Explaining basic differences between English and Russian Languages. </p>
+
+                <p class="card-text"><small class="text-muted">NLP</small></p>
+              </div>
+              </a>
+          </div>
+
+          <div class="card col-md-6 col-xl-4">
+            <a href="{% url 'project' 'nlp_russian_2' %}" class="links">
+              <img src="../static/images/nlp_russian_2.png" class="card-img-top" style="padding-bottom: 125px; padding-top:170px;"  >
+              <div class="card-body  ">
+                <h5 class="card-title">NLP Russian Language 2</h5>
+                <p class="card-text ">Using library gensim library and the downloaded model to see what possibilities it has. We are comparing russians words against each other and finding the similarities. </p>
+
+                <p class="card-text"><small class="text-muted">NLP</small></p>
+              </div>
+              </a>
+          </div>
+
+          <div class="card col-md-6 col-xl-4">
+            <a href="{% url 'project' 'Neural_Net_part1' %}" class="links">
+              <img src="../static/images/nn1.png" class="card-img-top" style="padding-bottom: 125px; padding-top:30x;"  >
+              <div class="card-body  ">
+                <h5 class="card-title">Neural Net Part 1</h5>
+                <p class="card-text ">Using scikit-learn library to train the Neural Net with one hidden layer and plotting decision boundaries. Explaining the difference between the number of neurons used and the performance of the Neural Net. </p>
+                <p class="card-text"><small class="text-muted">Machine Learning</small></p>
+              </div>
+              </a>
+          </div>
+
+          <div class="card col-md-6 col-xl-4 ">
+            <a href="{% url 'project' 'Neural_Net_part2' %}" class="links">
+              <img src="../static/images/nn2.png" class="card-img-top" style="padding-bottom: 125px; padding-top:30px;"  >
+              <div class="card-body">
+                <h5 class="card-title">Neural Net Part 2</h5>
+                <p class="card-text "> Implementing Stochastic Gradient Descent and Batch Gradient descent to train the Neural Network. Explaining the difference between the learning algorithms. </p>
+                <p class="card-text"><small class="text-muted">Machine Learning</small></p>
+              </div>
+              </a>
+          </div>
+
+
+          <div class="card card col-md-6 col-xl-4 border-1">
+              <a href="{% url 'project' 'affine_transformation' %}" class="links">
+                <img src="../static/images/affine_transform_img.png" class="card-img-top" >
+                <div class="card-body ">
+                  <h5 class="card-title">Affine Transformation</h5>
+                  <p class="card-text">Affine Transformations are combinations of linear transformations and translations. In this type of transformation, parallel lines remain parallel and ratios are preserved. </p>
+                  <p class="card-text"><small class="text-muted">Computer Vision</small></p>
+                </div>
+              </a>
+          </div>
+
+          <div class="card card col-md-6 col-xl-4 ">
+            <a href="{% url 'project' 'homography' %}" class="links">
+            <img src="../static/images/homography_image.png" class="card-img-top" style="height:30%, width:20%; padding-top:23%" >
+            <div class="card-body  ">
+              <h5 class="card-title">Homography Transformation</h5>
+              <p class="card-text "> In this type of transformation, parallel lines do not necessarily remain parallel and ratios are <strong>not</strong> preserved.</p>
+
+              <p class="card-text"><small class="text-muted">Computer Vision</small></p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card card col-md-6 col-xl-4 ">
+            <a href="{% url 'project' 'KernelLinearRegression' %}" class="links">
+            <img src="../static/images/kernel_img.png" class="card-img-top" style="height:30%, width:20%" >
+            <div class="card-body  ">
+              <h5 class="card-title">Kernel Linear Regression</h5>
+              <p class="card-text ">Fitting a function to data using linear least-squares regression and graphing interesting results. Explaining overfitting and underfitting for different terms. </p>
+
+              <p class="card-text"><small class="text-muted">Machine Learning</small></p>
+            </div>
+            </a>
+          </div>
+
+
+
+          <div class="card card col-md-6 col-xl-4 ">
+              <a href="{% url 'project' 'RegularizationCrossValidationandGradientDescent' %}" class="links">
+              <img src="../static/images/k_fold.png" class="card-img-top" >
+              <div class="card-body  ">
+                <h5 class="card-title">Regularization, Cross Validation and Gradient Descent</h5>
+                <p class="card-text ">Fitting a function to data using regularized least-squares regression. Implementing K-fold cross validation and Gradient Descent by myself.</p>
+
+                <p class="card-text"><small class="text-muted">Machine Learning</small></p>
+              </div>
+              </a>
+          </div>
+
+          <div class="card card col-md-6 col-xl-4 ">
+              <a href="{% url 'project' 'CondosDataPart1' %}" class="links">
+              <img src="../static/images/web_scraping.png" class="card-img-top" style="padding-top: 30px; padding-bottom:105px">
+              <div class="card-body  ">
+                <h5 class="card-title">Condos Data Part 1</h5>
+                  <p class="card-text ">In this project, we will get data from <a href="https://condos.ca">condos.ca</a><a href="{% url 'project' 'CondosDataPart1' %}" class="links"> website and store it into .csv file. This is done by using BeautifulSoup - python package for parsing HTML and XML documents. </p>
+
+                  <p class="card-text"><small class="text-muted">Web Scraping</small></p></a>
+              </div>
+              </a>
+          </div>
+
+          <div class="card card col-md-6 col-xl-4 ">
+              <a href="{% url 'project' 'CondosDataPart2' %}" class="links">
+              <img src="../static/images/pandas.jpg" class="card-img-top" >
+              <div class="card-body  ">
+                <h5 class="card-title">Condos Data Part 2</h5>
+                  <p class="card-text ">In this projects, we will use the data we got in </a><a href="{% url 'project' 'CondosDataPart1' %}"><strong>Condos Data Part 1 </strong></a>.<a href="{% url 'project' 'CondosDataPart2' %}" class="links"> We will use clean and structure the data such that it can be used to visualize the data as well as apply machine learning models. </p>
+
+                <p class="card-text"><small class="text-muted">Data visualization</small></p>
+              </div>
+              </a>
+          </div>
+
+          <div class="card card col-md-6 col-xl-4 ">
+              <a href="{% url 'project' 'computer_shop' %}" class="links">
+              <img src="../static/images/computer_store.png" class="card-img-top" style="padding-bottom: 100px" >
+              <div class="card-body  ">
+                <h5 class="card-title">Online Store</h5>
+                  <p class="card-text "> Online Computer Store where registered users can choose the parts they want and add them to the cart. The store keeps track of previous orders of each customer.  </p>
+
+                <p class="card-text"><small class="text-muted">Web Development</small></p>
+              </div>
+              </a>
+          </div>
+
+
+
+
+          <div class="card col-md-6 col-xl-4">
+              <br>
+              <h1>More projects soon...</h1>
+              <br>
+          </div>
+
+        </div>
+</div>
+
+
+
+{% endblock %}
